@@ -41,7 +41,7 @@ Create a new database and user:
 CREATE DATABASE student_db;
 GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
 ```
-## in this case if Password Redhat123
+## in this case if Password Redhat123 and used ec2 instance DB 
 ```
 CREATE DATABASE student_db;
 ```
@@ -51,6 +51,14 @@ use student_db;
 ```
 GRANT ALL PRIVILEGES ON springbackend.* TO 'root'@'localhost' IDENTIFIED BY 'Redhat123';
 ```
+
+## if DB-instance were used then use this queary
+```sql
+CREATE DATABASE student_db;
+GRANT ALL PRIVILEGES ON springbackend.* TO 'admin'@'localhost' IDENTIFIED BY 'Redhat123';
+```
+
+
 
 Replace username and your_password with your desired username and password.
 
